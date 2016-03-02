@@ -29,9 +29,10 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
   address: "smtp.mandrillapp.com",
   port: 587,
-  user_name: Rails.application.secrets.email_provider_username,
-  password: Rails.application.secrets.email_provider_api_key
-  }
+  user_name: Meresyew,
+  password: TBjPTTvQVOULhxyePzqlCg
+  }# Send email in development mode?
+config.action_mailer.perform_deliveries = true
   # ActionMailer Config
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.delivery_method = :smtp
